@@ -14,8 +14,8 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-TEMPLATE_DIR="F:\\djangopro\\project\\templates"
-
+#TEMPLATE_DIR="F:\\djangopro\\project\\templates"
+TEMPLATE_DIR=os.path.join(BASE_DIR,"templates")
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
@@ -25,7 +25,7 @@ SECRET_KEY = 'xqg&mt-52b0=c*z2yt*^wmr6ptas&)6^r#f7-)0hl*b+@mssw1'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["192.168.43.56"]
 
 
 # Application definition
