@@ -20,6 +20,10 @@ from project import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.index,name='index'),
-    path('home',views.home,name='home'),
-    path('html_demo1',views.html_demo1,name="html_demo1"),
+    path('home/',views.home,name='home'),
+    path('sample/',views.sample,name="sample"),
+    path('sample1/',views.sample1,name="sample1"),
+    path('sample2/',views.sample2,name="sample2"),
+    path('sample3/',views.sample3,name="sample3"),
+
 ]
