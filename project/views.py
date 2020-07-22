@@ -19,3 +19,15 @@ def sample2(request):
 
 def sample3(request):
     return render(request,"directory/sample3.html",{'a':10,'b':5})
+
+def urls_data(request,name):
+    return HttpResponse("<h1>{}</h1>".format(name))
+
+
+def ab(request,ab):
+    a=ab.split(" ")
+    sum=int(a[0])+int(a[1])
+    return HttpResponse(str(sum))
+
+
+

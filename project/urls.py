@@ -25,5 +25,7 @@ urlpatterns = [
     path('sample1/',views.sample1,name="sample1"),
     path('sample2/',views.sample2,name="sample2"),
     path('sample3/',views.sample3,name="sample3"),
+    path("urls_data/<name>",views.urls_data,name="urls_data"),
+    path("ab/<ab>",views.ab,name="ab"),
 
 ]
